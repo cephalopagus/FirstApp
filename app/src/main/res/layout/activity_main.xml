@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#8dc138">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/input_r_f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_margin="20dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="252dp"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="23.5dp"
+                android:background="@null"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </EditText>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#a9cc6c"
+        android:layout_marginTop="215dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_margin="20dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="252dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="23.5dp"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold">
+
+            </EditText>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/input_r_s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_margin="20dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="251dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="23.5dp"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold">
+
+            </EditText>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="NEXT"
+        android:textSize="30dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:drawableRight="@drawable/baseline_arrow_circle_right_24">
+
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="550dp"
+        android:layout_height="300dp"
+        android:background="@drawable/rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="298dp"
+        android:src="@drawable/owl_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:text="Trivia"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
